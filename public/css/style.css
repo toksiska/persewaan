@@ -1,0 +1,97 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: url(../img/Gunung.jpg); /* Ganti URL ini dengan URL gambar pilihan Anda */
+    background-size: cover;
+}
+
+/* Header */
+header {
+    background: rgba(201, 195, 145, 0.8); /* Transparan untuk efek overlay */
+    color: white;
+}
+
+#home {
+    background-image: url('Gunung.jpg');
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(213, 233, 142, 0.7);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Section */
+section {
+    padding: 60px 0;
+    background: rgba(255, 255, 255, 0.8); /* Transparan untuk efek overlay */
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Heading */
+h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #e3ec8d;
+}
+
+/* Card */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(226, 225, 127, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Button */
+.btn-success {
+    background-color: #b3ce76;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-success:hover {
+    background-color: #d8e493;
+}
+
+/* Footer */
+footer {
+    background: rgba(224, 236, 116, 0.8); /* Transparan untuk efek overlay */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+}
